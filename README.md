@@ -1,13 +1,13 @@
 # PySpark Example Project
 
-This document is designed to be read in parallel with the code in the `pyspark-template-project` repository. Together, these constitute what we consider to be a 'best practices' approach to writing ETL jobs using Apache Spark and its Python ('PySpark') APIs. This project addresses the following topics:
+This document is designed to be read in parallel with the code in the **amaze_df_pyspark** repository. Together, these constitute what we consider to be a 'best practices' approach to writing ETL jobs using Apache Spark and its Python ('PySpark') APIs. This project addresses the following topics:
 
-- how to structure ETL code in such a way that it can be easily tested and debugged;
+- how to structure pyspark code in such a way that it can be easily tested and debugged;
 - how to pass configuration parameters to a PySpark job;
 - how to handle dependencies on other modules and packages; and,
 - what constitutes a 'meaningful' test for an ETL job.
 
-## ETL Project Structure
+## Amaze Pyspark Project Structure
 
 The basic project structure is as follows:
 
@@ -234,4 +234,4 @@ SPARK_HOME=applications/spark-2.3.1/bin
 DEBUG=1
 ```
 
-Will enable access to these variables within any Python program -e.g. via a call to `os.environ['SPARK_HOME']`. Note, that if any security credentials are placed here, then this file **must** be removed from source control - i.e. add `.env` to the `.gitignore` file to prevent potential security risks.
+Will enable access to these variables within any Python program -e.g. via a call to `os.environ['SPARK_HOME']`. Note, that if any security credentials are placed here, then this file **must** be removed from source control - i.e. add `.env` to the `.gitignore` file to prevent potential security risks.# pyspark
